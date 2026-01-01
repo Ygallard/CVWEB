@@ -226,6 +226,17 @@ body {
 }
 
 .timeline-content {
+
+        .timeline-content h5 {
+            font-size: 0.95rem;
+            margin-top: 12px;
+            margin-bottom: 6px;
+        }
+
+        .timeline-content p {
+            font-size: 0.85rem;
+            margin-bottom: 6px;
+        }
     background: var(--bg-light);
     padding: 1.5rem;
     border-radius: 10px;
@@ -277,6 +288,18 @@ body {
 .timeline-content li {
     padding-left: 1.2rem;
     margin-bottom: 0.4rem;
+
+        .timeline-content h5 {
+            font-size: 0.9rem;
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+
+        .timeline-content p {
+            font-size: 0.8rem;
+            margin-bottom: 5px;
+            line-height: 1.4;
+        }
     position: relative;
     font-size: 0.9rem;
 }
@@ -287,6 +310,26 @@ body {
     left: 0;
     color: var(--primary-color);
     font-weight: bold;
+
+/* Subtítulos de proyectos */
+.timeline-content h5 {
+    margin-top: 15px;
+    margin-bottom: 8px;
+    color: var(--primary-color);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.timeline-content h5:first-of-type {
+    margin-top: 10px;
+}
+
+.timeline-content p {
+    margin-bottom: 8px;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
 }
 
 /* Habilidades */

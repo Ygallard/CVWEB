@@ -2,18 +2,29 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Animación de las barras de progreso de idiomas
     const observerOptions = {
-        threshold: 0.5,
-        rootMargin: '0px 0px -100px 0px'
+        // Umbral bajo para que las secciones aparezcan apenas entren en viewport
+        threshold: 0.15,
+        rootMargin: '0px 0px -40px 0px'
     };
 
-    const observer = new IntersectionObserver(function(entries) {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.style.opacity = '1';
-                entry.target.style.transform = 'translateY(0)';
-            }
+    // Fallback si IntersectionObserver no está disponible o no se dispara
+    const showAllSections = () => {
+        sections.forEach(section => {
+            section.style.opacity = '1';
+            section.style.transform = 'translateY(0)';
         });
-    }, observerOptions);
+    };
+
+    const observer = ('IntersectionObserver' in window)
+        ? new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions)
+        : null;
 
     // Observar todas las secciones
     const sections = document.querySelectorAll('.section');
@@ -21,8 +32,15 @@ document.addEventListener('DOMContentLoaded', function() {
         section.style.opacity = '0';
         section.style.transform = 'translateY(20px)';
         section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-        observer.observe(section);
+        if (observer) {
+            observer.observe(section);
+        }
     });
+
+    // Si el observer no se dispara en 800ms, mostramos todo para evitar que quede oculto
+    setTimeout(() => {
+        showAllSections();
+    }, 800);
 
     // Animación de entrada para las tarjetas de proyectos
     const projectCards = document.querySelectorAll('.project-card');
