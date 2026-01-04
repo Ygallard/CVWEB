@@ -11,6 +11,15 @@
 </head>
 <body>
     <div class="container">
+        <!-- Botones de control -->
+        <div class="controls">
+            <button id="theme-toggle" class="control-btn" aria-label="Cambiar tema">
+                <i class="fas fa-moon"></i>
+            </button>
+            <button id="language-toggle" class="control-btn" aria-label="Cambiar idioma">
+                <span class="lang-text">EN</span>
+            </button>
+        </div>
         <!-- Sección de Encabezado -->
         <header class="header">
             <div class="profile-img">
@@ -18,8 +27,8 @@
             </div>
             <div class="header-text">
                 <h1 class="name">Yordano Gallardo</h1>
-                <h2 class="title">Ingeniero de Sistemas</h2>
-                <p class="bio">Profesional con amplia experiencia en desarrollo de software, administración de sistemas y tecnologías de la información. Comprometido con la innovación y la excelencia técnica.</p>
+                <h2 class="title" data-es="Ingeniero de Sistemas" data-en="Systems Engineer">Ingeniero de Sistemas</h2>
+                <p class="bio" data-es="Profesional con amplia experiencia en desarrollo de software, administración de sistemas y tecnologías de la información. Comprometido con la innovación y la excelencia técnica." data-en="Professional with extensive experience in software development, systems administration and information technology. Committed to innovation and technical excellence.">Profesional con amplia experiencia en desarrollo de software, administración de sistemas y tecnologías de la información. Comprometido con la innovación y la excelencia técnica.</p>
             </div>
         </header>
 
@@ -51,10 +60,10 @@
         <section class="section about">
             <h3 class="section-title">
                 <i class="fas fa-user"></i>
-                Sobre Mí
+                <span data-es="Sobre Mí" data-en="About Me">Sobre Mí</span>
             </h3>
             <div class="section-content">
-                <p>Ingeniero de Ejecución en Informática, con experiencia en docencia y desarrollo de proyectos informáticos de
+                <p data-es="Ingeniero de Ejecución en Informática, con experiencia en docencia y desarrollo de proyectos informáticos de innovación. Actualmente docente de Programación en AIEP, donde desde hace 4 años imparto formación técnica orientada al desarrollo de software, pensamiento lógico y buenas prácticas de programación. En paralelo, llevo 4 años liderando y participando en proyectos informáticos de innovación junto a AIEP, aportando ideas, diseño y programación, y guiando a mis alumnos en la planificación, desarrollo y cumplimiento de plazos de entrega, fomentando el trabajo colaborativo y la aplicación de soluciones tecnológicas reales." data-en="Computer Science Engineer with experience in teaching and development of innovative IT projects. Currently a Programming teacher at AIEP, where for 4 years I have been providing technical training focused on software development, logical thinking and programming best practices. In parallel, I have been leading and participating in innovative IT projects with AIEP for 4 years, contributing ideas, design and programming, and guiding my students in planning, development and meeting delivery deadlines, promoting collaborative work and the application of real technological solutions.">Ingeniero de Ejecución en Informática, con experiencia en docencia y desarrollo de proyectos informáticos de
                     innovación.
                     Actualmente docente de Programación en AIEP, donde desde hace 4 años imparto formación técnica orientada al
                     desarrollo de software, pensamiento lógico y buenas prácticas de programación.
@@ -69,7 +78,7 @@
         <section class="section experience">
             <h3 class="section-title">
                 <i class="fas fa-briefcase"></i>
-                Experiencia Laboral
+                <span data-es="Experiencia Laboral" data-en="Work Experience">Experiencia Laboral</span>
             </h3>
             <div class="section-content">
                 <div class="timeline-item">
@@ -77,25 +86,25 @@
                     <div class="timeline-content">
                         <div class="job-header">
                             <h4>Instituto Profesional AIEP</h4>
-                            <span class="period">2023 - Presente</span>
+                            <span class="period" data-es="2023 - Presente" data-en="2023 - Present">2023 - Presente</span>
                         </div>
-                        <p class="company">Docente Tec. Programacion y analisis de sistema</p>
+                        <p class="company" data-es="Docente Tec. Programacion y analisis de sistema" data-en="Programming and System Analysis Teacher">Docente Tec. Programacion y analisis de sistema</p>
                         <ul>
-                                <li> Imparto clases de lógica de programación, fundamentos de desarrollo de software y resolución de
+                                <li data-es="Imparto clases de lógica de programación, fundamentos de desarrollo de software y resolución de problemas computacionales." data-en="I teach programming logic, software development fundamentals and computational problem solving.">Imparto clases de lógica de programación, fundamentos de desarrollo de software y resolución de
                                 problemas computacionales.</li>
-                               <li>  Enseño programación en Python, C#, PHP, JavaScript y Java, aplicando buenas prácticas y
+                               <li data-es="Enseño programación en Python, C#, PHP, JavaScript y Java, aplicando buenas prácticas y metodologías orientadas a proyectos." data-en="I teach programming in Python, C#, PHP, JavaScript and Java, applying best practices and project-oriented methodologies.">Enseño programación en Python, C#, PHP, JavaScript y Java, aplicando buenas prácticas y
                                 metodologías orientadas a proyectos.</li>
-                               <li>  Desarrollo y guío proyectos académicos enfocados en soluciones reales, liderando a estudiantes en la
+                               <li data-es="Desarrollo y guío proyectos académicos enfocados en soluciones reales, liderando a estudiantes en la planificación, desarrollo y cumplimiento de plazos de entrega." data-en="I develop and guide academic projects focused on real solutions, leading students in planning, development and meeting delivery deadlines.">Desarrollo y guío proyectos académicos enfocados en soluciones reales, liderando a estudiantes en la
                                 planificación, desarrollo y cumplimiento de plazos de entrega.</li>
-                                <li> Instruyó en desarrollo frontend utilizando HTML5, CSS3 y formularios en .NET, promoviendo
+                                <li data-es="Instruyo en desarrollo frontend utilizando HTML5, CSS3 y formularios en .NET, promoviendo interfaces funcionales y estructuradas." data-en="I teach frontend development using HTML5, CSS3 and .NET forms, promoting functional and structured interfaces.">Instruyó en desarrollo frontend utilizando HTML5, CSS3 y formularios en .NET, promoviendo
                                 interfaces funcionales y estructuradas.</li>
-                                <li> Elaboro y ejecuto planificaciones de proyectos informáticos, alineadas a los resultados de aprendizaje
+                                <li data-es="Elaboro y ejecuto planificaciones de proyectos informáticos, alineadas a los resultados de aprendizaje institucionales." data-en="I develop and execute IT project plans, aligned with institutional learning outcomes.">Elaboro y ejecuto planificaciones de proyectos informáticos, alineadas a los resultados de aprendizaje
                                 institucionales.</li>
-                                <li> Formó a los estudiantes en levantamiento y análisis de requerimientos, modelamiento de soluciones
+                                <li data-es="Formo a los estudiantes en levantamiento y análisis de requerimientos, modelamiento de soluciones y documentación técnica." data-en="I train students in requirements gathering and analysis, solution modeling and technical documentation.">Formó a los estudiantes en levantamiento y análisis de requerimientos, modelamiento de soluciones
                                 y documentación técnica.</li>
-                               <li> Supervisó la realización de pruebas de software, validando el correcto funcionamiento de los sistemas
+                               <li data-es="Superviso la realización de pruebas de software, validando el correcto funcionamiento de los sistemas desarrollados y fomentando la calidad del código." data-en="I supervise software testing, validating the proper functioning of developed systems and promoting code quality.">Supervisó la realización de pruebas de software, validando el correcto funcionamiento de los sistemas
                                 desarrollados y fomentando la calidad del código.</li>
-                               <li>Participó activamente en proyectos de innovación junto a AIEP, aportando ideas, diseño y
+                               <li data-es="Participo activamente en proyectos de innovación junto a AIEP, aportando ideas, diseño y programación, fortaleciendo el trabajo colaborativo y la experiencia práctica de los alumnos." data-en="I actively participate in innovation projects with AIEP, contributing ideas, design and programming, strengthening collaborative work and students' practical experience.">Participó activamente en proyectos de innovación junto a AIEP, aportando ideas, diseño y
                                 programación, fortaleciendo el trabajo colaborativo y la experiencia práctica de los alumnos</li>
                         </ul>
                     </div>
@@ -105,33 +114,33 @@
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
                         <div class="job-header">
-                            <h4>Proyectos de innovación – impulsa AIEP</h4>
-                            <span class="period">2023 - Actualidad</span>
+                            <h4 data-es="Proyectos de innovación – impulsa AIEP" data-en="Innovation Projects – AIEP Impulsa">Proyectos de innovación – impulsa AIEP</h4>
+                            <span class="period" data-es="2023 - Presente" data-en="2023 - Present">2023 - Presente</span>
                         </div>
-                        <p class="company">Desarrollador y Líder de Proyecto</p>
+                        <p class="company" data-es="Desarrollador y Líder de Proyecto" data-en="Developer and Project Leader">Desarrollador y Líder de Proyecto</p>
                         
-                        <h5>Aplicación móvil educativa para niños (2023–2024)</h5>
-                        <p>Desarrollo de una aplicación móvil educativa para niños de 1 a 8 años con dificultades de aprendizaje, orientada a reforzar habilidades cognitivas mediante juegos interactivos.</p>
+                        <h5 data-es="Aplicación móvil educativa para niños (2023–2024)" data-en="Educational mobile app for children (2023–2024)">Aplicación móvil educativa para niños (2023–2024)</h5>
+                        <p data-es="Desarrollo de una aplicación móvil educativa para niños de 1 a 8 años con dificultades de aprendizaje, orientada a reforzar habilidades cognitivas mediante juegos interactivos." data-en="Development of an educational mobile application for children aged 1 to 8 with learning difficulties, aimed at reinforcing cognitive skills through interactive games.">Desarrollo de una aplicación móvil educativa para niños de 1 a 8 años con dificultades de aprendizaje, orientada a reforzar habilidades cognitivas mediante juegos interactivos.</p>
                         <ul>
-                            <li><strong>Primera etapa (2023):</strong> Desarrollo en Unity 2D para Android e iOS, trabajo colaborativo bajo metodología Kanban junto a un equipo multidisciplinario.</li>
-                            <li><strong>Segunda etapa (2024):</strong> Actualización y ampliación de juegos educativos, desarrollo realizado de forma individual.</li>
-                            <li>La aplicación fue probada y entregada a un jardín infantil de San Felipe, validando su uso en un entorno real.</li>
+                            <li data-es="Primera etapa (2023): Desarrollo en Unity 2D para Android e iOS, trabajo colaborativo bajo metodología Kanban junto a un equipo multidisciplinario." data-en="First stage (2023): Development in Unity 2D for Android and iOS, collaborative work under Kanban methodology with a multidisciplinary team."><strong data-es="Primera etapa (2023):" data-en="First stage (2023):">Primera etapa (2023):</strong> Desarrollo en Unity 2D para Android e iOS, trabajo colaborativo bajo metodología Kanban junto a un equipo multidisciplinario.</li>
+                            <li data-es="Segunda etapa (2024): Actualización y ampliación de juegos educativos, desarrollo realizado de forma individual." data-en="Second stage (2024): Update and expansion of educational games, individually developed."><strong data-es="Segunda etapa (2024):" data-en="Second stage (2024):">Segunda etapa (2024):</strong> Actualización y ampliación de juegos educativos, desarrollo realizado de forma individual.</li>
+                            <li data-es="La aplicación fue probada y entregada a un jardín infantil de San Felipe, validando su uso en un entorno real." data-en="The application was tested and delivered to a kindergarten in San Felipe, validating its use in a real environment.">La aplicación fue probada y entregada a un jardín infantil de San Felipe, validando su uso en un entorno real.</li>
                         </ul>
 
-                        <h5>Proyecto AguaConecta (2024–2025)</h5>
-                        <p>Desarrollo de una solución tecnológica para la visualización y control del consumo de agua en la comunidad El Zaino, comuna de Santa María.</p>
+                        <h5 data-es="Proyecto AguaConecta (2024–2025)" data-en="AguaConecta Project (2024–2025)">Proyecto AguaConecta (2024–2025)</h5>
+                        <p data-es="Desarrollo de una solución tecnológica para la visualización y control del consumo de agua en la comunidad El Zaino, comuna de Santa María." data-en="Development of a technological solution for visualizing and controlling water consumption in the El Zaino community, Santa María commune.">Desarrollo de una solución tecnológica para la visualización y control del consumo de agua en la comunidad El Zaino, comuna de Santa María.</p>
                         <ul>
-                            <li><strong>Primera etapa (2024):</strong> Aplicación móvil para visualizar lecturas de un flujómetro, permitiendo conocer el caudal de agua ingresado para su correcta distribución comunitaria.</li>
-                            <li><strong>Segunda etapa (2025):</strong> Evolución del sistema a una plataforma web, incorporando nuevas tecnologías, gráficos de consumo, generación de reportes en PDF para comparaciones mensuales y mejora en la experiencia de usuario.</li>
-                            <li><strong>Objetivo:</strong> transparentar la información, optimizar el riego de plantaciones y ampliar el acceso a más familias de la comunidad.</li>
+                            <li data-es="Primera etapa (2024): Aplicación móvil para visualizar lecturas de un flujómetro, permitiendo conocer el caudal de agua ingresado para su correcta distribución comunitaria." data-en="First stage (2024): Mobile application to visualize flow meter readings, allowing to know the water flow entered for proper community distribution."><strong data-es="Primera etapa (2024):" data-en="First stage (2024):">Primera etapa (2024):</strong> Aplicación móvil para visualizar lecturas de un flujómetro, permitiendo conocer el caudal de agua ingresado para su correcta distribución comunitaria.</li>
+                            <li data-es="Segunda etapa (2025): Evolución del sistema a una plataforma web, incorporando nuevas tecnologías, gráficos de consumo, generación de reportes en PDF para comparaciones mensuales y mejora en la experiencia de usuario." data-en="Second stage (2025): System evolution to a web platform, incorporating new technologies, consumption graphs, PDF report generation for monthly comparisons and improved user experience."><strong data-es="Segunda etapa (2025):" data-en="Second stage (2025):">Segunda etapa (2025):</strong> Evolución del sistema a una plataforma web, incorporando nuevas tecnologías, gráficos de consumo, generación de reportes en PDF para comparaciones mensuales y mejora en la experiencia de usuario.</li>
+                            <li data-es="Objetivo: transparentar la información, optimizar el riego de plantaciones y ampliar el acceso a más familias de la comunidad." data-en="Objective: make information transparent, optimize crop irrigation and expand access to more families in the community."><strong data-es="Objetivo:" data-en="Objective:">Objetivo:</strong> transparentar la información, optimizar el riego de plantaciones y ampliar el acceso a más familias de la comunidad.</li>
                         </ul>
 
-                        <h5>Sistema de Evaluación Psicológica – Hospital Psiquiátrico de Putaendo (2024–2025)</h5>
-                        <p>Gestión y desarrollo de un sistema para la evaluación del nivel cognitivo de pacientes, midiendo aspectos como memoria, razonamiento, lectura y otras habilidades cognitivas.</p>
+                        <h5 data-es="Sistema de Evaluación Psicológica – Hospital Psiquiátrico de Putaendo (2024–2025)" data-en="Psychological Evaluation System – Putaendo Psychiatric Hospital (2024–2025)">Sistema de Evaluación Psicológica – Hospital Psiquiátrico de Putaendo (2024–2025)</h5>
+                        <p data-es="Gestión y desarrollo de un sistema para la evaluación del nivel cognitivo de pacientes, midiendo aspectos como memoria, razonamiento, lectura y otras habilidades cognitivas." data-en="Management and development of a system for evaluating patients' cognitive level, measuring aspects such as memory, reasoning, reading and other cognitive skills.">Gestión y desarrollo de un sistema para la evaluación del nivel cognitivo de pacientes, midiendo aspectos como memoria, razonamiento, lectura y otras habilidades cognitivas.</p>
                         <ul>
-                            <li><strong>Fase 1:</strong> Desarrollo de un prototipo funcional para retroalimentación de profesionales de la salud.</li>
-                            <li><strong>Fase 2:</strong> Mejora integral del sistema, puesta en marcha, gestión de actividades, control de versiones y coordinación del equipo de trabajo.</li>
-                            <li>Proyecto orientado a apoyar procesos clínicos mediante herramientas tecnológicas confiables.</li>
+                            <li data-es="Fase 1: Desarrollo de un prototipo funcional para retroalimentación de profesionales de la salud." data-en="Phase 1: Development of a functional prototype for feedback from health professionals."><strong data-es="Fase 1:" data-en="Phase 1:">Fase 1:</strong> Desarrollo de un prototipo funcional para retroalimentación de profesionales de la salud.</li>
+                            <li data-es="Fase 2: Mejora integral del sistema, puesta en marcha, gestión de actividades, control de versiones y coordinación del equipo de trabajo." data-en="Phase 2: Comprehensive system improvement, implementation, activity management, version control and work team coordination."><strong data-es="Fase 2:" data-en="Phase 2:">Fase 2:</strong> Mejora integral del sistema, puesta en marcha, gestión de actividades, control de versiones y coordinación del equipo de trabajo.</li>
+                            <li data-es="Proyecto orientado a apoyar procesos clínicos mediante herramientas tecnológicas confiables." data-en="Project aimed at supporting clinical processes through reliable technological tools.">Proyecto orientado a apoyar procesos clínicos mediante herramientas tecnológicas confiables.</li>
                         </ul>
                     </div>
                 </div>
@@ -143,13 +152,13 @@
                             <h4>Fundo Catemu</h4>
                             <span class="period">Nov 2018 - Dic 2028</span>
                         </div>
-                        <p class="company">Sector Corporativo</p>
+                        <p class="company" data-es="Sector Corporativo" data-en="Corporate Sector">Sector Corporativo</p>
                         <ul>
-                            <li>Apoyé en la resolución de problemáticas operativas de los cosecheros, facilitando la comunicación y
+                            <li data-es="Apoyé en la resolución de problemáticas operativas de los cosecheros, facilitando la comunicación y mejora de procesos internos." data-en="I supported the resolution of operational issues for harvesters, facilitating communication and improving internal processes.">Apoyé en la resolución de problemáticas operativas de los cosecheros, facilitando la comunicación y
                             mejora de procesos internos.</li>
-                            <li>Implementé códigos QR para la identificación y control de cosechas, contribuyendo a la
+                            <li data-es="Implementé códigos QR para la identificación y control de cosechas, contribuyendo a la organización y trazabilidad de la información." data-en="I implemented QR codes for harvest identification and control, contributing to organization and information traceability.">Implementé códigos QR para la identificación y control de cosechas, contribuyendo a la
                             organización y trazabilidad de la información.</li>
-                            <li>Realicé revisión y control de documentación administrativa, asegurando el orden, cumplimiento y
+                            <li data-es="Realicé revisión y control de documentación administrativa, asegurando el orden, cumplimiento y correcta gestión de registros." data-en="I performed review and control of administrative documentation, ensuring order, compliance and proper records management.">Realicé revisión y control de documentación administrativa, asegurando el orden, cumplimiento y
                             correcta gestión de registros.</li>
                         </ul>
                     </div>
@@ -161,29 +170,29 @@
         <section class="section education">
             <h3 class="section-title">
                 <i class="fas fa-graduation-cap"></i>
-                Educación
+                <span data-es="Educación" data-en="Education">Educación</span>
             </h3>
             <div class="section-content">
                 <div class="timeline-item">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
                         <div class="job-header">
-                            <h4>Ingeniería de ejecución informática mención desarrollo de sistemas.</h4>
+                            <h4 data-es="Ingeniería de ejecución informática mención desarrollo de sistemas." data-en="Computer Engineering degree with a focus on systems development.">Ingeniería de ejecución informática mención desarrollo de sistemas.</h4>
                             <span class="period">2015 - 2020</span>
                         </div>
                         <p class="company">INSTITUTO PROFESIONAL AIEP</p>
-                        <p>Especialización en Desarrollo de Software y Sistemas de Información</p>
+                        <p data-es="Especialización en Desarrollo de Software y Sistemas de Información" data-en="Specialization in Software Development and Information Systems">Especialización en Desarrollo de Software y Sistemas de Información</p>
                     </div>
                 </div>
                     <div class="timeline-item">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
                         <div class="job-header">
-                            <h4>Diplomado en Unity - Game Designer</h4>
+                            <h4 data-es="Diplomado en Unity - Game Designer" data-en="Unity Diploma - Game Designer">Diplomado en Unity - Game Designer</h4>
                             <span class="period">2023 - 2023</span>
                         </div>
                         <p class="company">INSTITUTO PROFESIONAL AIEP</p>
-                        <p>Desarrollo de juego educativo con Unity 3D Movil</p>
+                        <p data-es="Desarrollo de juego educativo con Unity 3D Movil" data-en="Educational game development with Unity 3D Mobile">Desarrollo de juego educativo con Unity 3D Movil</p>
                     </div>
                 </div>
                   
@@ -194,12 +203,12 @@
         <section class="section skills">
             <h3 class="section-title">
                 <i class="fas fa-code"></i>
-                Habilidades Técnicas
+                <span data-es="Habilidades Técnicas" data-en="Technical Skills">Habilidades Técnicas</span>
             </h3>
             <div class="section-content">
                 <div class="skills-grid">
                     <div class="skill-category">
-                        <h4>Lenguajes de Programación</h4>
+                        <h4 data-es="Lenguajes de Programación" data-en="Programming Languages">Lenguajes de Programación</h4>
                         <div class="skill-tags">
                             <span class="skill-tag">Python</span>
                             <span class="skill-tag">JavaScript</span>
@@ -210,7 +219,7 @@
                         </div>
                     </div>
                     <div class="skill-category">
-                        <h4>Desarrollo Web</h4>
+                        <h4 data-es="Desarrollo Web" data-en="Web Development">Desarrollo Web</h4>
                         <div class="skill-tags">
                             <span class="skill-tag">HTML5</span>
                             <span class="skill-tag">CSS3</span>
@@ -220,7 +229,7 @@
                         </div>
                     </div>
                     <div class="skill-category">
-                        <h4>Bases de Datos</h4>
+                        <h4 data-es="Bases de Datos" data-en="Databases">Bases de Datos</h4>
                         <div class="skill-tags">
                             <span class="skill-tag">MySQL</span>
                             <span class="skill-tag">PostgreSQL</span>
@@ -229,7 +238,7 @@
                         </div>
                     </div>
                     <div class="skill-category">
-                        <h4>Herramientas & Sistemas</h4>
+                        <h4 data-es="Herramientas & Sistemas" data-en="Tools & Systems">Herramientas & Sistemas</h4>
                         <div class="skill-tags">
                             <span class="skill-tag">Git</span>
                             <span class="skill-tag">Linux</span>
@@ -247,13 +256,13 @@
         <section class="section projects">
             <h3 class="section-title">
                 <i class="fas fa-project-diagram"></i>
-                Proyectos Destacados
+                <span data-es="Proyectos Destacados" data-en="Featured Projects">Proyectos Destacados</span>
             </h3>
             <div class="section-content">
                 <div class="projects-grid">
                     <div class="project-card">
-                        <h4>Aplicación móvil educativa (2023–2024)</h4>
-                        <p><strong>Objetivo:</strong> reforzar habilidades cognitivas en niños de 1 a 8 años mediante juegos interactivos accesibles en Android e iOS.</p>
+                        <h4 data-es="Aplicación móvil educativa (2023–2024)" data-en="Educational Mobile App (2023–2024)">Aplicación móvil educativa (2023–2024)</h4>
+                        <p><strong data-es="Objetivo:" data-en="Objective:">Objetivo:</strong> <span data-es="reforzar habilidades cognitivas en niños de 1 a 8 años mediante juegos interactivos accesibles en Android e iOS." data-en="reinforce cognitive skills in children aged 1 to 8 through interactive games accessible on Android and iOS.">reforzar habilidades cognitivas en niños de 1 a 8 años mediante juegos interactivos accesibles en Android e iOS.</span></p>
                         <div class="project-tech">
                             <span>Unity 2D</span>
                             <span>Android</span>
@@ -261,21 +270,21 @@
                         </div>
                     </div>
                     <div class="project-card">
-                        <h4>Proyecto AguaConecta (2024–2025)</h4>
-                        <p><strong>Objetivo:</strong> transparentar el consumo de agua, optimizar el riego y ampliar el acceso de la comunidad El Zaino mediante visualización y reportes.</p>
+                        <h4 data-es="Proyecto AguaConecta (2024–2025)" data-en="AguaConecta Project (2024–2025)">Proyecto AguaConecta (2024–2025)</h4>
+                        <p><strong data-es="Objetivo:" data-en="Objective:">Objetivo:</strong> <span data-es="transparentar el consumo de agua, optimizar el riego y ampliar el acceso de la comunidad El Zaino mediante visualización y reportes." data-en="make water consumption transparent, optimize irrigation and expand access for the El Zaino community through visualization and reports.">transparentar el consumo de agua, optimizar el riego y ampliar el acceso de la comunidad El Zaino mediante visualización y reportes.</span></p>
                         <div class="project-tech">
                             <span>Mobile</span>
                             <span>Web</span>
-                            <span>Gráficos PDF</span>
+                            <span data-es="Gráficos PDF" data-en="PDF Graphics">Gráficos PDF</span>
                         </div>
                     </div>
                     <div class="project-card">
-                        <h4>Sistema de Evaluación Psicológica (2024–2025)</h4>
-                        <p><strong>Objetivo:</strong> apoyar procesos clínicos evaluando memoria, razonamiento y lectura con una herramienta tecnológica confiable para salud.</p>
+                        <h4 data-es="Sistema de Evaluación Psicológica (2024–2025)" data-en="Psychological Evaluation System (2024–2025)">Sistema de Evaluación Psicológica (2024–2025)</h4>
+                        <p><strong data-es="Objetivo:" data-en="Objective:">Objetivo:</strong> <span data-es="apoyar procesos clínicos evaluando memoria, razonamiento y lectura con una herramienta tecnológica confiable para salud." data-en="support clinical processes by evaluating memory, reasoning and reading with a reliable technological tool for healthcare.">apoyar procesos clínicos evaluando memoria, razonamiento y lectura con una herramienta tecnológica confiable para salud.</span></p>
                         <div class="project-tech">
                             <span>Web</span>
-                            <span>Gestión</span>
-                            <span>Control de versiones</span>
+                            <span data-es="Gestión" data-en="Management">Gestión</span>
+                            <span data-es="Control de versiones" data-en="Version Control">Control de versiones</span>
                         </div>
                     </div>
                 </div>
@@ -286,23 +295,23 @@
         <section class="section languages">
             <h3 class="section-title">
                 <i class="fas fa-language"></i>
-                Idiomas
+                <span data-es="Idiomas" data-en="Languages">Idiomas</span>
             </h3>
             <div class="section-content">
                 <div class="languages-grid">
                     <div class="language-item">
-                        <span class="language-name">Español</span>
+                        <span class="language-name" data-es="Español" data-en="Spanish">Español</span>
                         <div class="progress-bar">
                             <div class="progress-fill" style="width: 100%"></div>
                         </div>
-                        <span class="level">Nativo</span>
+                        <span class="level" data-es="Nativo" data-en="Native">Nativo</span>
                     </div>
                     <div class="language-item">
-                        <span class="language-name">Inglés</span>
+                        <span class="language-name" data-es="Inglés" data-en="English">Inglés</span>
                         <div class="progress-bar">
                             <div class="progress-fill" style="width: 50%"></div>
                         </div>
-                        <span class="level">Basico - Intermedio</span>
+                        <span class="level" data-es="Basico - Intermedio" data-en="Basic - Intermediate">Basico - Intermedio</span>
                     </div>
                 </div>
             </div>
@@ -310,7 +319,7 @@
 
         <!-- Footer -->
         <footer class="footer">
-            <p>&copy; 2025 Yordano Gallardo. Todos los derechos reservados.</p>
+            <p>&copy; 2025 Yordano Gallardo. <span data-es="Todos los derechos reservados." data-en="All rights reserved.">Todos los derechos reservados.</span></p>
         </footer>
     </div>
 

@@ -1,5 +1,84 @@
-// Animaciones al hacer scroll
+// Funcionalidad de Modo Oscuro y Cambio de Idioma
 document.addEventListener('DOMContentLoaded', function() {
+    
+    // ===== MODO OSCURO =====
+    const themeToggle = document.getElementById('theme-toggle');
+    const html = document.documentElement;
+    
+    // Cargar tema guardado
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    html.setAttribute('data-theme', savedTheme);
+    updateThemeIcon(savedTheme);
+    
+    themeToggle.addEventListener('click', function() {
+        const currentTheme = html.getAttribute('data-theme');
+        const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+        
+        html.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
+        updateThemeIcon(newTheme);
+    });
+    
+    function updateThemeIcon(theme) {
+        const icon = themeToggle.querySelector('i');
+        if (theme === 'dark') {
+            icon.className = 'fas fa-sun';
+        } else {
+            icon.className = 'fas fa-moon';
+        }
+    }
+    
+    // ===== CAMBIO DE IDIOMA =====
+    const languageToggle = document.getElementById('language-toggle');
+    const langText = languageToggle.querySelector('.lang-text');
+    
+    // Cargar idioma guardado
+    let currentLang = localStorage.getItem('language') || 'es';
+    updateLanguage(currentLang);
+    
+    languageToggle.addEventListener('click', function() {
+        currentLang = currentLang === 'es' ? 'en' : 'es';
+        localStorage.setItem('language', currentLang);
+        updateLanguage(currentLang);
+    });
+    
+    function updateLanguage(lang) {
+        // Actualizar botón
+        langText.textContent = lang === 'es' ? 'EN' : 'ES';
+        
+        // Actualizar el atributo lang del HTML
+        document.documentElement.lang = lang === 'es' ? 'es' : 'en';
+        
+        // Actualizar todos los elementos con data-es y data-en
+        const elements = document.querySelectorAll('[data-es][data-en]');
+        elements.forEach(element => {
+            const text = element.getAttribute(`data-${lang}`);
+            if (text) {
+                // Si el elemento tiene hijos (como <strong> o <span>), preservar su estructura
+                if (element.children.length > 0 && element.tagName !== 'P' && element.tagName !== 'LI') {
+                    element.textContent = text;
+                } else {
+                    // Para elementos que pueden tener contenido HTML mixto
+                    const hasChildrenWithData = Array.from(element.children).some(child => 
+                        child.hasAttribute('data-es') && child.hasAttribute('data-en')
+                    );
+                    
+                    if (!hasChildrenWithData) {
+                        element.textContent = text;
+                    } else {
+                        // Solo actualizar el nodo de texto directo, no los hijos
+                        Array.from(element.childNodes).forEach(node => {
+                            if (node.nodeType === Node.TEXT_NODE) {
+                                node.textContent = '';
+                            }
+                        });
+                    }
+                }
+            }
+        });
+    }
+    
+    // ===== ANIMACIONES AL HACER SCROLL =====
     // Animación de las barras de progreso de idiomas
     const observerOptions = {
         // Umbral bajo para que las secciones aparezcan apenas entren en viewport
